@@ -837,6 +837,7 @@ class FeverAPI extends Handler {
                 // this is "all" to fever, but internally "all" is -4
                 else if ($id == 0)
                 {
+                    /*  disabled "group mark group as read", because Reeder App sometimes fires a unwanted id="0", mark="group", as="read" action to api
                     $id = -4;
                     $sth = $this->pdo->prepare("UPDATE ttrss_user_entries
                                                 SET unread = false, last_read = NOW() WHERE ref_id IN
@@ -844,6 +845,7 @@ class FeverAPI extends Handler {
                                                     (SELECT DISTINCT id FROM ttrss_entries, ttrss_user_entries WHERE ref_id = id
                                                      AND owner_uid = ? AND unread = true AND updated < ? ) as tmp)");
                     $sth->execute([clean($_SESSION["uid"]), date("Y-m-d H:i:s", $before)]);
+                    */
                 }
             }
             // not a category
