@@ -1,8 +1,19 @@
 # Tiny Tiny RSS Fever API Plugin
 
+## FORK NOTE
+
+This is a fork [DigitalDJ/tinytinyrss-fever-plugi](https://github.com/DigitalDJ/tinytinyrss-fever-plugin). The iOS App Reeder sometimes mark all articles as read, in this fork that "feature" is disabled.
+
+Update fork:
+```
+git fetch upstream
+git merge upstream/master
+git push
+```
+
 ## Description
 
-This is an open source plugin for Tiny Tiny RSS which simulates the Fever API. This allows Fever compatible RSS clients to use Tiny Tiny RSS.
+This is an fork of the open source plugin for Tiny Tiny RSS which simulates the Fever API. This allows Fever compatible RSS clients to use Tiny Tiny RSS. 
 
 See also: [Fever API](fever-api.md)
 
